@@ -1,3 +1,2 @@
 .venv
-Taxi_Trips_cleaned.csv
-Taxi_Trips.csv
+*.csv
