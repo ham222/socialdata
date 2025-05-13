@@ -15,24 +15,40 @@ p[align="center"] {
 }
 </style>
 
-With the increasing digitalisation of the business world, it is only natural that municipalities and cities follow suit. One of the best examples of this process is the City of Chicago, which publishes vast amounts of data for anyone to use for free. For this reason, the dataset that was used for this project comes from Chicago. The data we want to show regards the change of use of taxis throughout the years.
+With the increasing digitalisation of the business world, it is only natural that municipalities and cities follow suit. One of the best examples of this process is the City of Chicago, which publishes vast amounts of data for anyone to use for free. For this reason, the dataset that was used for this project comes from Chicago. The data we want to show regards the change of use of taxis throughout the years. [^1]
+
 <iframe src="https://ham222.github.io/socialdata/assets/interactive_monthly_trips.html" width="100%" height="600px" style="border:none;"></iframe>
 <p align=center>An interactive plot showing the monthly trips </p>
-As shown in the plot, the use of taxis has been in a steady decline from mid-2016 until COVID, when a sharp drop was observed due to pandemic. This decline can be mainly attributed to companies such as Uber, which have been able to obtain a favorable court decision which made them subject to different, laxer regulations than traditional taxi companies. Uber has also launched UberEats in the same year, which brought more users to the already-existing platform.
+As shown in the plot, the use of taxis has been in a steady decline from mid-2016 until COVID, when a sharp drop was observed due to pandemic. This decline can be mainly attributed to companies such as Uber, which have been able to obtain a favorable court decision which made them subject to different, laxer regulations than traditional taxi companies [^2]. Uber has also launched UberEats in the same year, which brought more users to the already-existing platform.
 Because of proportionally higher fares of traditional taxis rather than Ubers at night, the range of hours in which the passengers are using the more traditional taxis have decreased. In 2015 there is a main trend of people taking the trips on weekdays  at 8-9 AM and then again at 5-7 PM, which shows the trips were taken to and from work. The big outlier for this pattern is the weekend with the most frequent time to travel being  Friday at 7 PM, however there is also a sizable uptick of travelers on the midnight between Saturday and Sunday. However, in 2023 this is no longer the case – the main hotspots are now Tuesday to Thursday at 5 PM.
+
 ![Image]({{ site.baseurl }}/assets/hour_weekday.png)
 <p align=center>A plot showing the distribution of trips per weekday and hour </p>
 The increasing digitalization has also impacted the lives of private citizens, which can be observed in the preferred payment method for the taxi trips. In 2015, cash was the most prevalent means of paying the fare with credit cards following slightly behind it. However, 8 years of technology improvements have changed this dynamic in favor of credit cards taking the lead, and payments through mobile making a grand appearance, being the 3rd most popular payment method.
+
 ![Image]({{ site.baseurl }}/assets/payment_type.png)
 <p align=center>A plot showing the changes in payment types in 2015 vs 2023 </p>
 One of the components of the total fare is the amount and size of tips. One of the most important decisions for a passenger is to decide with which company to travel, as it can impact the overall price and experience greatly. From the analysis it is concluded that the company the people used to tip the most at was Taxicab Insurance Agency LLC. It’s an example of a greater trend, where the drivers at smaller businesses are tipped more. This can have many explanations, but one of the most rational ones is that the smaller the company, the more oversight the management has over the drivers (quality over quantity). The tip rate of Flash Cab, the company with the most trip also being the lowest, standing at three times less than Taxicab Insurance Agency LLC also seems to support this thesis.
+
 <iframe src="https://ham222.github.io/socialdata/assets/company_tip_rate_scatter.html" width="100%" height="600px" style="border:none;"></iframe>
 <p align=center>A scatter plot showing the popularity of the company against their tip rate </p>
 One of the more interesting conclusions can be drawn from the pickup location plot. In there it can be seen that the relative pickup density has increased in the “outlier” areas, not grouped in the city center. These areas are the two airports located in Chicago. One interpretation of this data can be that the international visitors that come through the airport commute with whichever means are the most convenient for them – the traditional taxis have reserved pickup spots in front of the airport. There is probably also a significant amount of travelers who exit the airport and don’t know about the existence of competing ridesharing types, so they use the services of whichever one they know about.
+
 ![Image]({{ site.baseurl }}/assets/pickup_dropoff_density.png)
-<p align=center>A plot displaying the pickup and dropoff density in 2015 and 2023. </p>
-What does this all mean for traditional taxi companies? The prospects aren’t good. With the forecasted fare increase which can be in part attributed to inflation, rising costs and inflexibility to change of the traditional taxi companies, the projected amount of taxi trips will decrease in favor of other means of transport. Besides increasing competition from taxi-like companies such as Uber, the City of Chicago has also made several significant infrastructural improvements into their public transportation system, such as investments in road infrastructure to accommodate buses, extending the rail lines, etc. All these steps will make transportation more accessible and will sway at least some part of the commuters away from private taxi trips into much cheaper public transport system.
+<p align=center>A plot displaying the pickup and dropoff density in 2015 and 2023 </p>
+
+<iframe src="https://ham222.github.io/socialdata/assets/pickup_dropoff_map_2023.html" width="100%" height="600px" style="border:none;"></iframe>
+<p align=center>An interactive map of pickups and dropoffs for the year 2023. </p>
+
+What does this all mean for traditional taxi companies? The prospects aren’t good. With the forecasted fare increase which can be in part attributed to inflation [^3], rising costs and inflexibility to change of the traditional taxi companies, the projected amount of taxi trips will decrease in favor of other means of transport. Besides increasing competition from taxi-like companies such as Uber, the City of Chicago has also made several significant infrastructural improvements into their public transportation system, such as investments in road infrastructure to accommodate buses, extending the rail lines, etc. All these steps will make transportation more accessible and will sway at least some part of the commuters away from private taxi trips into much cheaper public transport system.
+
 ![Image]({{ site.baseurl }}/assets/total_taxi_trips_forecast.png)
 <p align=center>Forecast showing a downturn in the use of taxis </p>
+
 ![Image]({{ site.baseurl }}/assets/average_fare_forecast.png)
-<p align=center>A ML algorithm analysis showcasing the increase in fare amount.</p>
+<p align=center>A ML algorithm analysis showcasing the increase in fare amount</p>
+
+Citations:
+[^1]: https://data.cityofchicago.org/Transportation/Taxi-Trips-2013-2023-/wrvz-psew/about_data
+[^2]: https://chicago.suntimes.com/2016/10/7/18335440/taxis-reversed-appeals-court-rules-in-favor-of-uber?utm_source=chatgpt.com
+[^3]: https://www.investopedia.com/inflation-rate-by-year-7253832
