@@ -5,6 +5,16 @@ date:   2025-05-13 21:29:01 +0200
 categories: jekyll update
 ---
 
+
+<style>
+p {
+  text-align: justify;
+}
+p[align="center"] {
+  text-align: center !important;
+}
+</style>
+
 With the increasing digitalisation of the business world, it is only natural that municipalities and cities follow suit. One of the best examples of this process is the City of Chicago, which publishes vast amounts of data for anyone to use for free. For this reason, the dataset that was used for this project comes from Chicago. The data we want to show regards the change of use of taxis throughout the years.
 <iframe src="https://ham222.github.io/socialdata/assets/interactive_monthly_trips.html" width="100%" height="600px" style="border:none;"></iframe>
 <p align=center>An interactive plot showing the monthly trips </p>
